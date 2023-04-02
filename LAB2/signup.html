@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<link rel= "stylesheet" type = "text/css" href="main.css">
+
+<title>회원가입</title>
+
+</head>
+
+<body>
+
+<div class="welcome">Welcome</div>
+<div class="menu">
+    <a href="login.html">로그인</a>
+    <a href="signup.html" class="currentPage">회원가입</a>
+</div>
+
+<div class="signupForm">
+    <form>
+        <fieldset>
+            <legend>ID</legend>
+            <input type="text" name="id" autofocus placeholder="ID" required autocomplete="on">
+        </fieldset>
+        <fieldset>
+            <legend>비밀번호</legend>
+            <input type="password" name="password" placeholder="비밀번호" required>
+        </fieldset>
+        <fieldset>
+            <legend>닉네임</legend>
+            <input type="text" name="nickname" placeholder="닉네임" required autocomplete="on">
+        </fieldset>
+        <fieldset>
+            <legend>성별</legend>
+            남성 <input type="radio" name="gender" value="male" checked required/>
+            여성 <input type="radio" name="gender" value="female" />
+        </fieldset>
+        <fieldset>
+            <legend>직업</legend>
+            학생 <input type="checkbox" name="job" value="student" checked required/>
+            직장인 <input type="checkbox" name="job" value="worker" />
+            프리랜서 <input type="checkbox" name="job" value="freelancer" />
+            기타 <input type="checkbox" name="job" value="etc" />
+        </fieldset>
+        <fieldset>
+            <legend>키</legend>
+            <input type="number" name="height" min="140" max="200" step="5" required>
+        </fieldset>
+    </form>
+
+</div>
+<div class="button">
+    <button id="signupButton">회원가입</button>
+    <button id="cancelButton">뒤로 가기</button>
+</div>
+
+</body>
+
+</html>
